@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #262626;
+            text-align: center;
+        }
+
+        /* Navbar */
+        nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #262626;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0095f6;
+        }
+
+        /* Header */
+        header {
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            color: #0095f6;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Section cards */
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+        }
+
+        section h2 {
+            color: #0095f6;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #262626;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        button:hover {
+            background: #0073cc;
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Header -->
+<header>
+    <h1>Contact Me 📩</h1>
+    <p>Send me a message or just say hi!</p>
+</header>
+
+<!-- Contact Form Card -->
+<section>
+    <form>
+        <input type="text" placeholder="Your Name"><br>
+        <input type="email" placeholder="Your Email"><br>
+        <textarea placeholder="Your Message" rows="5"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- Back button -->
+<a href="index.html" class="animate">⬅ Back to Home</a>
+
+</body>
+  </html>
