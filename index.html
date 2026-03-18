@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Own World</title>
+    <title>My World</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial;
-            background-color: #0f172a;
+            background: #0f172a;
             color: white;
+        }
+        nav {
+            background: #020617;
+            padding: 15px;
             text-align: center;
-            margin-top: 100px;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+        header {
+            text-align: center;
+            padding: 100px 20px;
         }
         h1 {
             color: #38bdf8;
+            font-size: 40px;
         }
-        p {
-            font-size: 18px;
+        section {
+            padding: 40px;
+            text-align: center;
         }
         button {
             padding: 10px 20px;
             background: #38bdf8;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Own World 🌍</h1>
-    <p>This is my first website built using GitHub</p>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <button onclick="showMessage()">Click Me</button>
+<header>
+    <h1>Welcome to My World 🌍</h1>
+    <p>I am learning web development 🚀</p>
+    <button onclick="hello()">Click Me</button>
+</header>
 
-    <script>
-        function showMessage() {
-            alert("You clicked the button 🚀");
-        }
-    </script>
+<section>
+    <h2>About Me</h2>
+    <p>This is my personal website. I will build amazing things here.</p>
+</section>
+
+<script>
+function hello() {
+    alert("Welcome to my website 😎");
+}
+</script>
 
 </body>
 </html>
