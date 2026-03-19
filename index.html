@@ -1,10 +1,14 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>SR World</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -16,7 +20,7 @@
         nav {
             background: white;
             padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav a {
@@ -55,7 +59,7 @@
             padding: 20px;
             max-width: 600px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
             transition: transform 0.3s;
         }
 
@@ -81,6 +85,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .card:hover img {
+            transform: scale(1.2);
         }
 
         .animate {
@@ -90,12 +99,13 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .animate:hover {
             transform: scale(1.1);
             background: #0073cc;
+            box-shadow: 0 0 15px #0095f6;
         }
 
     </style>
@@ -140,7 +150,6 @@
     </div>
 </section>
 
-<!-- Script -->
 <script>
 function hello() {
     alert("Welcome to my website 😎");
